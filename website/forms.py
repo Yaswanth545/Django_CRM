@@ -18,7 +18,7 @@ class SignupForm(UserCreationForm):
             self.fields['username'].widget.attrs['class'] = 'form-control'
             self.fields['username'].widget.attrs['placeholder'] = 'User Name'
             self.fields['username'].label = ''
-            self.fields['username'].help_text = '<span class = "form-text text-muted small">Required 150 characters or fewer characters'
+            self.fields['username'].help_text = '<span class = "form-text text-muted"><small>Required 150 characters or fewer characters</small></span>'
             
             self.fields['password1'].widget.attrs['class'] = 'form-control'
             self.fields['password1'].widget.attrs['placeholder'] = 'User Name'
@@ -28,4 +28,4 @@ class SignupForm(UserCreationForm):
             self.fields['password2'].widget.attrs['class'] = 'form-control'
             self.fields['password2'].widget.attrs['placeholder'] = 'Confirm Password'
             self.fields['password2'].label = ''
-            self.fields['password2'].help_text = '<span class = "form-text text-muted small"><li>Enter the same Password for verification</li></span>'
+            self.fields['password2'].help_text = '<span class = "form-text text-muted"><small>Enter the same Password for verification</small></span>'
